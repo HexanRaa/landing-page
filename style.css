@@ -61,7 +61,12 @@ h1{
 
 .random-info{
     background-color: white;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+
 }
 
 .card-heading{
@@ -70,16 +75,30 @@ h1{
     color: #1F2937;
 }
 
-.small-cards{
+.info-cards{
     display: flex;
-    gap: 30px;
-    justify-content: center;
+}
+
+.small-cards{
+    width: 200px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .card-image{
-    width: 50px;
-    border: 2px solid blue;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 8px;
+}
+
+.small-cards p{
+    color: #1F2937;
+    text-align: center;
+    padding: 0 20px;
 }
 
 .quote-section{
